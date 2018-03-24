@@ -37,3 +37,4 @@
 # VS temp
 /Arkanoid/.vs/
 
+*.tlog
