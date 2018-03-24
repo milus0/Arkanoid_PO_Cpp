@@ -1,6 +1,7 @@
 #include <SFML/graphics.hpp>
 #include <SFML/Window.hpp>
 #include "Ball.h"
+#include "Racket.h"
 
 using namespace sf;
 using namespace std;
@@ -11,7 +12,8 @@ unsigned const int windowSizeY = 600;
 
 int main()
 {
-	Ball ball(500, 300, windowSizeX, windowSizeY);	// TODO - dodaæ funkcje ustawiaj¹c¹ zmienne statyczne z wielkoœciami okna
+	Ball ball(windowSizeX/2, windowSizeY/2, windowSizeX, windowSizeY);	// TODO - dodaæ funkcje ustawiaj¹c¹ zmienne statyczne z wielkoœciami okna
+	Racket racket(windowSizeX / 2, windowSizeY + 20, windowSizeX, windowSizeY);
 	RenderWindow window({ windowSizeX, windowSizeY }, "Hello World");
 	window.setFramerateLimit(60);
 
@@ -27,8 +29,13 @@ int main()
 		}
 
 		window.clear();
+
 		ball.Update();
+		racket.Update();
+
 		window.draw(ball);
+		window.draw(racket);
+
 		window.display();
 	}
 }

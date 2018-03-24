@@ -57,3 +57,4 @@ float Ball::Bottom()
 {
 	return (this->circle.getPosition().y + circle.getRadius());
 }
+
