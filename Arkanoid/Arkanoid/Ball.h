@@ -26,7 +26,7 @@ private:
 
 	void draw(RenderTarget& target, RenderStates state) const override;
 
-	float ballVelocity = {2.0f};
+	float ballVelocity = {5.0f};
 	Vector2f ballVelocityVector{ballVelocity, ballVelocity};
 };
 

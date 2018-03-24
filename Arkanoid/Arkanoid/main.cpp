@@ -13,7 +13,7 @@ int main()
 {
 	Ball ball(500, 300, windowSizeX, windowSizeY);	// TODO - dodaæ funkcje ustawiaj¹c¹ zmienne statyczne z wielkoœciami okna
 	RenderWindow window({ windowSizeX, windowSizeY }, "Hello World");
-	window.setFramerateLimit(30);
+	window.setFramerateLimit(60);
 
 	while (window.isOpen())
 	{

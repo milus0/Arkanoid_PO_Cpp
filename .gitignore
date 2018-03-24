@@ -33,3 +33,7 @@
 
 # SFML Lib
 /Arkanoid/SFML/
+
+# VS temp
+/Arkanoid/.vs/
+
