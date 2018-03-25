@@ -38,3 +38,8 @@
 /Arkanoid/.vs/
 
 *.tlog
+
+*.idb
+*.vcxproj
+*.vcxproj.filters
+*.filters
